@@ -323,8 +323,12 @@
     <label for="message" class="form-label fw-bolder" >Message</label>
     <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
   </div>
-  <button class="btn btn-primary mt-2"  onclick="sendMail()">Send</button>
-<!-- </form> -->
+  <!-- <button class="btn btn-primary mt-2"  onclick="sendMail()">Send</button> -->
+  <button class="btn btn-primary mt-2" onclick="sendMail()" type="button" >
+    <span id="load" class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style="display:none"></span>
+    send
+  </button>
+        <!-- </form> -->
         </div>
       </div>
       <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">

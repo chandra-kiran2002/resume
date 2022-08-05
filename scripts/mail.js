@@ -1,10 +1,11 @@
 function sendMail(){
+    document.getElementById("load").style="display:inline-block"
     var name=document.getElementById("name").value
     var email=document.getElementById("email").value
     var body=document.getElementById("message").value
     console.log(name+"  "+email+"  "+body)
 
-
+    
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
@@ -32,5 +33,12 @@ function sendMail(){
         }
     })
     .catch(error => console.log('error', error));
+
+    document.getElementById("name").value=""
+    document.getElementById("email").value=""
+    document.getElementById("message").value=""
+
+    document.getElementById("load").style="display:none"
+
 }
 
