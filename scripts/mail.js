@@ -31,14 +31,16 @@ function sendMail(){
         else{
             alert("Please check your mail id")
         }
+        document.getElementById("name").value=""
+        document.getElementById("email").value=""
+        document.getElementById("message").value=""
+        document.getElementById("load").style="display:none"
     })
     .catch(error => console.log('error', error));
 
-    document.getElementById("name").value=""
-    document.getElementById("email").value=""
-    document.getElementById("message").value=""
+    
 
-    document.getElementById("load").style="display:none"
+   
 
 }
 
