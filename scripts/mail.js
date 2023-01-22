@@ -22,7 +22,7 @@ function sendMail(){
     redirect: 'follow'
     };
 
-    fetch("https://backendresume.herokuapp.com/login", requestOptions)
+    fetch("https://backend-resume-kiran.onrender.com/login", requestOptions)
     .then(response => response.text())
     .then(result => {
         if(result=="success"){
